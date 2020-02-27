@@ -1,0 +1,15 @@
+def speedlimit(speed): 
+  while True: 
+    try: 
+      speed = int(input("what is your present speed: ")) 
+      if speed <= 70: 
+        print("speed is okay") 
+      elif speed >= 75: 
+        while speed <= 130: 
+          print (f"Point: {(speed - 70)//5}")
+        else: 
+          print ("License Suspended") 
+          break
+    except ValueError: 
+      print("Invalid Value") 
+speedlimit("speed") 
